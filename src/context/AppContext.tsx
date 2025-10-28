@@ -167,7 +167,7 @@ const appReducer = (state: AppState, action: Action): AppState => {
       localStorage.setItem('searchHistory', JSON.stringify(newHistory));
       return { ...state, searchHistory: newHistory };
     case 'CLEAR_DATA':
-      return { ...state, userData: null, repos: [], error: null };
+      return { ...state, userData: null, repos: [] };
     default:
       return state;
   }
